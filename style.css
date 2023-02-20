@@ -1,11 +1,14 @@
 @import url("../aluraBooks/styles/header.css");
 @import url("../aluraBooks/styles/banner.css");
+@import url("../aluraBooks/styles/carrossel.css");
+@import url("../aluraBooks/styles/topicos.css");
+@import url("../aluraBooks/styles/contato.css");
 :root {
     --cor-de-fundo: #EBECEE;
     --branco: #FFFFFF;
     --laranja: #EB9B00;
-    --primaria: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
-    --fonte-principal: 'Poppins', saens-serif;
+    --primaria: #002F52;
+    --fonte-principal: 'Poppins';
 }
 * {
     margin: 0;
