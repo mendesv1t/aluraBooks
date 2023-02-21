@@ -19,7 +19,7 @@
     <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container-botao">
-            <label for="menu">
+            <label for="menu" class="container-rotulo">
                 <span class="cabecalho-menu-hamburguer container-imagem" style="padding: 1em"></span>
             </label>
             <ul class="lista-menu">
@@ -46,7 +46,7 @@
 
         <ul class="opcoes">
             <input type="checkbox" id="opcoes-menu" class="opcoes-botao">
-            <label for="opcoes-menu">
+            <label for="opcoes-menu" class="opcoes-rotulo">
                 <li class="opcoes-item">Categorias</li>
             </label>
 
@@ -75,63 +75,75 @@
         <div class="container">
             <a href="#"><img src="assets/Favoritos.svg" alt="Meus Favoritos"
                     class="container-imagem container-imagem-favoritos"></a>
-            <a href="#"><img src="assets/Compras.svg" alt="Minhas Compras" class="container-imagem"></a>
-            <a href="#"><img src="assets/Usuário.svg" alt="Meu perfil" class="container-imagem"></a>
+            <a href="#" class="container-link">
+                <img src="assets/Compras.svg" alt="Minhas Compras" class="container-imagem">
+                <p class="container-texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container-link">
+                <img src="assets/Usuário.svg" alt="Meu perfil" class="container-imagem">
+                <p class="container-texto">Meu perfil</p>
+            </a>
         </div>
     </header>
     <section class="banner">
-        <h2 class="banner-titulo">Já sabe por onde começar?</h2>
-        <p class="banner-texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-        <input type="search" class="banner-pesquisa" placeholder="Qual será a sua próxima leitura?">
+        <div class="banner-card">
+            <h2 class="banner-titulo">Já sabe por onde começar?</h2>
+            <p class="banner-texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" class="banner-pesquisa" placeholder="Qual será a sua próxima leitura?">
+        </div>
     </section>
     <section class="carrossel">
         <h2 class="carrossel-titulo">Últimos lançamentos</h2>
-        <!-- Slider main container -->
-        <div class="swiper">
 
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="assets/livros/ApacheKafka.svg" alt="Livro Apache Kafka"></div>
-                <div class="swiper-slide"><img src="assets/livros/Guia Front-end.svg" alt="Livro Guia Front-end"></div>
-                <div class="swiper-slide"><img src="assets/livros/Portugol.svg" alt="Livro Portugol"></div>
-                <div class="swiper-slide"><img src="assets/livros/Gestão2.svg" alt="Livro Gestao"></div>
-                <div class="swiper-slide"><img src="assets/livros/Liderança.svg" alt="Livro Liderança"></div>
-            </div>
+        <div class="carrossel-container">
+            <!-- Slider main container -->
+            <div class="swiper">
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <div class="card">
-            <!--1a linha-->
-            <div class="card-descricao">
-                <!--1a coluna-->
-                <div class="descricao">
-                    <h3 class="descricao-titulo">Talvez você também se interesse por...</h3>
-                    <h2 class="descricao-titulo-livro">Angular 11 e Firebase</h2>
-                    <p class="descricao-texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/livros/ApacheKafka.svg" alt="Livro Apache Kafka"></div>
+                    <div class="swiper-slide"><img src="assets/livros/Guia Front-end.svg" alt="Livro Guia Front-end">
+                    </div>
+                    <div class="swiper-slide"><img src="assets/livros/Portugol.svg" alt="Livro Portugol"></div>
+                    <div class="swiper-slide"><img src="assets/livros/Gestão2.svg" alt="Livro Gestao"></div>
+                    <div class="swiper-slide"><img src="assets/livros/Liderança.svg" alt="Livro Liderança"></div>
                 </div>
-                <!--2a coluna-->
-                <img src="assets/Angular.svg" alt="Angular" class="descricao-imagem">
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <!--2a linha-->
-            <div class="card-botoes">
-                <!--1a coluna-->
-                <ul class="botoes">
-                    <li class="botoes-item"><img src="assets/Favoritos.svg" alt="Favoritar livro"></li>
-                    <li class="botoes-item"><img src="assets/Compras.svg" alt="Adicionar ao carrinho"></li>
-                </ul>
-                <a href="#" class="botoes-ancora">Saiba mais</a>
+            <div class="card">
+                <!--1a linha-->
+                <div class="card-descricao">
+                    <!--1a coluna-->
+                    <div class="descricao">
+                        <h3 class="descricao-titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao-titulo-livro">Angular 11 e Firebase</h2>
+                        <p class="descricao-texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <!--2a coluna-->
+                    <img src="assets/Angular.svg" alt="Angular" class="descricao-imagem">
+                </div>
+                <!--2a linha-->
+                <div class="card-botoes">
+                    <!--1a coluna-->
+                    <ul class="botoes">
+                        <li class="botoes-item"><img src="assets/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botoes-item"><img src="assets/Compras.svg" alt="Adicionar ao carrinho"></li>
+                    </ul>
+                    <a href="#" class="botoes-ancora">Saiba mais</a>
+                </div>
             </div>
         </div>
     </section>
     <section class="carrossel">
         <h2 class="carrossel-titulo">Mais vendidos</h2>
+        <div class="carrossel-container">
         <div class="swiper">
-
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
             <!-- Additional required wrapper -->
@@ -178,6 +190,7 @@
                 </ul>
                 <a href="#" class="botoes-ancora">Saiba mais</a>
             </div>
+        </div>
         </div>
     </section>
     <section class="topicos">

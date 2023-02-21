@@ -94,3 +94,16 @@ hr {
         font-size: 24px;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        padding: 3em 30vw;
+    }
+    .rodape-lista {
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1em;
+    }
+    .rodape {
+        padding: 3 em 0;
+    }
+}
